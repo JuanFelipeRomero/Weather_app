@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');
+
+:root {
+    --work-sans: <uniquifier> {
+      font-family: "Work Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+    } 
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--work-sans);
+}
