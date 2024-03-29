@@ -29,7 +29,7 @@ body {
 .app{
     background-color: var(--lightBlue);
     width: 520px;
-    height: 640px;
+    height: 680px;
     border-radius: 24px;
     display: flex;
     flex-direction: column;
@@ -43,6 +43,8 @@ body {
     align-items: center;
     justify-content: center;
     gap: 12px;
+    margin: 40px 0px 28px 0px;
+   
 }
 
 .app_form_input{
@@ -52,6 +54,7 @@ body {
     border-radius: 32px;
     font-family: var(--work-sans);
     font-size: large;
+
 }
 
 .app__form_search-button {
@@ -72,7 +75,7 @@ body {
 
 .app__main-information__figure {
     width: 100%;
-    margin-bottom: 16px;
+    margin: 32px 0px 24px ;
 }
 
 .app__main-information__image {
@@ -86,12 +89,17 @@ body {
     color: white;
 }
 
+.app__main-information__weather {
+    font-size: 20px;
+}
+
 .app__main-information__degrees {
-    font-size: 60px;
+    font-size: 48px;
+    margin: 8px 0px;
 }
 
 .app__main-information__city {
-    font-size: 36px;
+    font-size: 28px;
 }
 
 /*Styles secondaty information*/
@@ -101,15 +109,21 @@ body {
     display: flex;
     padding: 30px 0px 40px 0px ;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap:48px;
 }
 
 .app__second-information {
     display: flex;
-    flex-direction: column;
+
     color: white;
     font-weight: 500;
-    font-size: large;
+    font-size: 1.5rem;
+    gap:8px;
+}
+
+.app__second-informatio:last-child > p{
+    font-size:5rem;
 }
 
 .app__second-information > img {

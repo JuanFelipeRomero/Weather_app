@@ -9,8 +9,8 @@
 <body>
     <main class="main">
         <section class="app">
-            <form action="" class="app__form">
-                <input type="text" id="cityInput" class="app_form_input" placeholder="City">
+            <form action="" class="app__form" id="app__form">
+                <input type="text" id="cityInput" name="city" class="app_form_input" placeholder="City">
                 <button class="app__form_search-button">
                     <img src="../src/assets/logos/search.svg" alt="">
                 </button>
@@ -21,21 +21,27 @@
                     <img src="../src/assets/images/sun.png" alt="image" class="app__main-information__image">
                 </figure>
                 <div class="app__main-information__texts">
-                    <p class="app__main-information__degrees">7°c</p>
-                    <p class="app__main-information__city">City</p>
+                    <p class="app__main-information__weather" id="weather_value_label"></p>
+                    <p class="app__main-information__degrees" id="degrees_value_label">0°c</p>
+                    <p class="app__main-information__city" id="city_label">City</p>
                 </div>
             </div>
 
             <div class="app__second-information__container">
                 <div class="app__second-information">
                     <img src="../src/assets/logos/wind.svg" alt="Wind" class="app__second-information__wind--image">
-                    <p class="app__second-information__wind--value">0</p>
-                    <p class="app__second-information__wind--subtitle">Wind speed</p>
+                    <div class="app__second-information__texts">
+                        <p class="app__second-information__wind--value" id="wind_value_label"></p>
+                        <p class="app__second-information__wind--subtitle">Wind speed</p>
+                    </div>
                 </div>
                 <div class="app__second-information">
                     <img src="../src/assets/logos/humidity.svg" alt="" class="app__second-information__humidity--image">
-                    <p class="app__second-information__humidity--value">0%</p>
-                    <p class="app__second-information__humidity--subtitle">Humidity</p>
+                    <div class="app__second-information__texts">
+                        <p class="app__second-information__humidity--value" id="humidity_value_label"></p>
+                        <p class="app__second-information__humidity--subtitle">Humidity</p>
+                    </div>
+
                 </div>
             </div>
         </section>
