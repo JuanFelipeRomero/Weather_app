@@ -8,7 +8,7 @@
 </head>
 <body>
     <main class="main">
-        <section class="app">
+        <section class="app" id="appContainer">
             <form action="" class="app__form" id="app__form">
                 <input type="text" id="cityInput" name="city" class="app_form_input" placeholder="City">
                 <button class="app__form_search-button">
@@ -18,11 +18,11 @@
 
             <div class="app__main-information">
                 <figure class="app__main-information__figure">
-                    <img src="../src/assets/images/sun.png" alt="image" class="app__main-information__image">
+                    <img src="../src/assets/images/sun.png" alt="image" class="app__main-information__image" id="weatherImage">
                 </figure>
                 <div class="app__main-information__texts">
-                    <p class="app__main-information__weather" id="weather_value_label"></p>
-                    <p class="app__main-information__degrees" id="degrees_value_label">0°c</p>
+                    <p class="app__main-information__weather" id="weather_value_label">Weather</p>
+                    <p class="app__main-information__degrees" id="degrees_value_label">Temp°c</p>
                     <p class="app__main-information__city" id="city_label">City</p>
                 </div>
             </div>
